@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#parent {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+#nav {
+  height: 100px;
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+#nav-a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav h3 {
+  font-size: 17px;
+  border: 1.5px solid black;
+  padding: 7px 10px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+#nav i {
+  font-size: 17px;
+  border: 1.5px solid black;
+  padding: 7px 8px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+#nav h1 {
+  font-weight: 500;
+  font-size: 35px;
+  /* 🛑 Uppercase */
+  text-transform: uppercase;
+}
+
+#btn1 {
+  padding: 7px 12px;
+  border-radius: 50px;
+  border: 1.5px solid black;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: white;
+}
+
+#btn2 {
+  padding: 7px 12px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-weight: 600;
+  background-color: orangered;
+  color: white;
+  border: none;
+}
+
+/* main ke andar h1 => #main h1  */
+
+/* main ke direct andar h1 => #main > h1  */
+
+#parent > h1 {
+  font-size: 150px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* bring "Our Advantages" in 1 single line */
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  height: 500px;
+  width: 400px;
+  /* 🛑 Covering the image tag */
+  object-fit: cover;
+  /* 🛑 */
+  object-position: top;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50px;
+  transform: translate(-50%, -50%);
+}
+
+/* background fit: cover => for background */
+/* object-fit: cover => for images */
+
+#img1 {
+  /* rotating using transform translate */
+  transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+#img2 {
+  /* rotating using transform translate */
+  transform: translate(-50%, -50%) rotate(-20deg);
+}
+
+#img3 {
+  /* rotating using transform translate */
+  transform: translate(-50%, -50%) rotate(-10deg);
+}
+
+#img4 {
+  /* rotating using transform translate */
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+#bottom-left {
+  font-size: 17px;
+  position: absolute;
+  bottom: 5%;
+  left: 3%;
+}
+
+#arrow-down {
+  font-size: 50px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  border: 1.5px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* #bottom-right-parent {
+  height: 80px;
+  width: 200px;
+  background-color: red;
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  display: flex;
+  justify-content: space-between;
+} */
+
+#socials {
+  height: 80px;
+  width: 200px;
+  font-size: 25px;
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+#bottom-right-text {
+  font-size: 17px;
+  position: absolute;
+  bottom: 2%;
+  right: 3%;
+}

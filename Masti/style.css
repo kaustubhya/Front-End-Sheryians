@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  color: rgb(94, 94, 181);
+  background-color: yellow;
+  font-size: 200px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 5;
+}
+
+h2 {
+  color: red;
+}
+
+/* #box {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(5, 5, 24);
+  margin-left: 50%;
+  margin-top: 10%;
+  padding-left: 50px;
+} */
+
+#box {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(46, 202, 19);
+  /* Position Absolute Objects ko hawa mein utha deta hai and then move kar deta hai */
+  position: absolute;
+  /* The properties like top and left below are only unlocked when we give position as absolute */
+  top: 50%;
+  left: 50%;
+  /* Now we have centered the top left corner of the box */
+
+  /* To center the whole box */
+  transform: translate(-50%, -50%);
+
+  /* Use the following code to center text just like we centered the div */
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  */
+}
+
+#parent {
+  height: 100%;
+  width: 100%;
+  background-color: aquamarine;
+  /* Arranging the div items horizontally i.e. row wise */
+  display: flex;
+
+  /* Positioning Items in y axis i.e. vertically */
+  /* align-items: flex-start;
+  align-items: flex-end;
+  align-items: center; */
+
+  /* Positioning Items in x axis i.e. horizontally */
+  /* justify-content: flex-start; */
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+  justify-content: space-around;
+}
+
+#child1 {
+  height: 200px;
+  width: 200px;
+  background-color: salmon;
+}
+#child2 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(255, 0, 225);
+}
+#child3 {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(204, 255, 0);
+}
+
+/* We get 3 divs one after the other in a vertical manner */
+
+/* Now to get the 3 divs one after the other in a horizontal way, we use display flex 🛑 Use display flex in parent */
+
+/* Vertical => Columns */
+/* Horizontal => Rows */
